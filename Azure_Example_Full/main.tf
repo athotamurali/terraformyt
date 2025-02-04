@@ -12,10 +12,10 @@ terraform {
 #https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret
 provider "azurerm" {
   features {} 
-  client_id       = "00000000-0000-0000-0000-000000000000"
-  client_secret   = "20000000-0000-0000-0000-000000000000"
-  tenant_id       = "10000000-0000-0000-0000-000000000000"
-  subscription_id = "20000000-0000-0000-0000-000000000000"
+  client_id       = "d4caaf17-ea93-4ffd-a860-b5d5bf9039d7"
+  client_secret   = "GOp8Q~sJnqJpvbHtvMYAJTNwEABehHOeZKWfncOY"
+  tenant_id       = "de803b7f-c504-4074-b57c-cbfba0bf4d9b"
+  subscription_id = "826c63bf-49ba-4129-b69d-e5686f5ee2e5"
 }
 
 #create resource group
@@ -91,7 +91,7 @@ resource "azurerm_windows_virtual_machine" "main" {
   source_image_reference {
     publisher = "MicrosoftWindowsServer"
     offer     = "WindowsServer"
-    sku       = "2012-R2-Datacenter"
+    sku       = "2019-Datacenter"
     version   = "latest"
   }
 
